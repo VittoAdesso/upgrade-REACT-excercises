@@ -1,0 +1,18 @@
+/* le doy algo de estilos */
+
+.character-form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-form input{
+    margin-top: 12px;
+}
+
+.character-form button{
+    margin-top: 12px;
+    background: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
