@@ -4,7 +4,7 @@ const UseEffectApi = () => {
 
     let [character, setCharacter] = useState([]);
 
-    let [ setIsLoading] = useState(false);
+    let [ setIsLoading ] = useState(false);
 
     useEffect(() => {
         setIsLoading(true);//mostramos loading
@@ -12,6 +12,7 @@ const UseEffectApi = () => {
           .then((response) => response.json())
           .then((data) => setCharacter(data.results))
           .finally(() => setIsLoading(false));//ocultamos el loading
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
     return (
@@ -25,12 +26,12 @@ const UseEffectApi = () => {
             return (
 
                 <div key={ character.id }>
-
                 <p>{ character.name }</p> 
-
                 </div>
             );
-        })}
+        })
+        }; 
+
      </fieldset>
      </div>
     
