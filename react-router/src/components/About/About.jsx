@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 export default function About() {
 
 
-
-  const [ user, setUser ] = useState([]); // será igual a un array 
+// lo que hgo destructuring es nombres de lo que quiero y el set de lo que quiero
+  const [ commits, setCommits ] = useState([]); // será igual a un array 
 
     //uso el hook useefecct que siempre recibe 2 parámetros
     // uso éste hook por código asyncrono, código secundario aaparte 
@@ -13,7 +13,7 @@ export default function About() {
         // pido info a la API
         fetch("https://jsonplaceholder.typicode.com/comments")
         .then((res) => res.json())
-        .then((json) => setUser(json))
+        .then((json) => setCommits(json))
     }, []); 
 
 // aquí retorno un mapeo de los datos que pido a la api con el fecth 
@@ -23,7 +23,7 @@ export default function About() {
       {/* sino englobo el contenido en una etiqueta estilo ésta que es ciega a la web, me da error el map */}
       
 
-  { user.map((item) => 
+  { commits.map((item) => 
 
         <div key={ item.id} >
         <h3> {item.name} </h3>

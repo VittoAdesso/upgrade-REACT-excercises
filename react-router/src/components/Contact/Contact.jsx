@@ -7,6 +7,7 @@ const Contact = () => {
 
 // creo variables, y estado 
 
+// lo que hgo destructuring es nombres de lo que quiero y el set de lo que quiero
 const [ user, setUser ] = useState([]); // será igual a un array 
 
     //uso el hook useefecct que siempre recibe 2 parámetros

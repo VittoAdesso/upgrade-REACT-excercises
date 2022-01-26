@@ -6,10 +6,11 @@ export default function NavBar() {
 
       //puedo crear los estilos a lo bruto
   const styles = {
-    backgroundColor: "gray",
-    color: "black",
+    backgroundColor: "#f5d6ff",
+    color: "white",
     display : "flex", 
-    justifyContent : "flex-end",
+    justifyContent : "space-between",
+    alignItems : "center"
     
   }
 
