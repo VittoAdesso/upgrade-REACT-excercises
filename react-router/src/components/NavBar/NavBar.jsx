@@ -20,8 +20,9 @@ export default function NavBar() {
 
         <Link to="/">Home</Link> 
         {/* en to pongo la ruta  */}
-        <Link to="/contact">Contact</Link>
-        <Link to="/about">About</Link>
+        <Link to="contact">Contact</Link>
+        {/* ponerlo sin / las rutas completas  */}
+        <Link to="about">About</Link>
         {/* BRUTAL!!! */}
         </nav>
 
